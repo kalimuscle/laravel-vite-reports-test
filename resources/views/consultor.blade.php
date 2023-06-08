@@ -72,7 +72,7 @@
                                     <header class="bg-gray-100 text-white py-4">
                                         <div class="container mx-auto flex items-center justify-start">
                                             <label for="month1" class="mr-2 text-gray-900">Periodo:</label>
-                                            <select id="month1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/2 p-2.5 mr-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <select id="month1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-1/2 p-2.5 mr-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
                                                 <option value="01">Janeiro</option>
                                                 <option value="02">Fevereiro</option>
                                                 <option value="03">Março</option>
@@ -86,7 +86,7 @@
                                                 <option value="11">Novembro</option>
                                                 <option value="12">Dezembro</option>
                                             </select>
-                                            <select id="year1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/2 p-2.5 mr-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <select id="year1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-1/2 p-2.5 mr-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
                                                 <option value="2000">2000</option>
                                                 <option value="2001">2001</option>
                                                 <option value="2002">2002</option>
@@ -113,7 +113,7 @@
                                                 <option value="2023">2023</option>
                                             </select>
                                             <span class="mr-2 text-gray-900">A:</span>
-                                            <select id="month2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/2 p-2.5 ml-2 mr-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <select id="month2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-1/2 p-2.5 ml-2 mr-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
                                                 <option value="01">Janeiro</option>
                                                 <option value="02">Fevereiro</option>
                                                 <option value="03">Março</option>
@@ -127,7 +127,7 @@
                                                 <option value="11">Novembro</option>
                                                 <option value="12">Dezembro</option>
                                             </select>
-                                            <select id="year2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/2 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <select id="year2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-1/2 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
                                             <option value="2000">2000</option>
                                                 <option value="2001">2001</option>
                                                 <option value="2002">2002</option>
@@ -166,33 +166,33 @@
                                         <div class="container mx-auto flex items-center justify-start">
 
 
-                                            <select id="list1" multiple id="countries_multiple" class="bg-gray-50 h-72 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <select id="list1" multiple id="countries_multiple" class="bg-gray-50 h-72 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
                                             @foreach ($consultores as $item)
                                                 <option value="{{$item->co_usuario}}">{{ $item->no_usuario }}</option>
                                             @endforeach
                                             </select>
 
 
-                                            <button type="button" id="removeButton" class="text-white bg-blue-700 m-2 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            <button type="button" id="removeButton" class="text-white bg-purple-700 m-2 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">
                                                 <<
                                             </button>
 
-                                            <button type="button" id="addButton" class="text-white bg-blue-700 m-2 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                            <button type="button" id="addButton" class="text-white bg-purple-700 m-2 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">
                                                 >>
                                             </button>
 
 
 
-                                            <select id="list2" multiple id="countries_multiple" class="bg-gray-50 h-72 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <select id="list2" multiple id="countries_multiple" class="bg-gray-50 h-72 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
                                             </select>
 
 
                                         </div>
                                     </div>
                                     <div class="w-2/12 bg-gray-100 p-4">
-                                        <button type="button" id="relatorioButton" class="text-white m-2 w-24 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Relatório</button>
-                                        <button type="button" id="graphButton" class="text-white m-2 w-24 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Gráfico</button>
-                                        <button type="button" id="pizzaButton" class="text-white m-2 w-24 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Pizza</button>
+                                        <button type="button" id="relatorioButton" class="text-white m-2 w-24 bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Relatório</button>
+                                        <button type="button" id="graphButton" class="text-white m-2 w-24 bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Gráfico</button>
+                                        <button type="button" id="pizzaButton" class="text-white m-2 w-24 bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Pizza</button>
                                     </div>
                                 </div>
 
@@ -734,7 +734,7 @@
                 const data = {labels, datasets};
 
                 // const data = {
-                //     labels: ['Red', 'Orange', 'Yellow', 'Green', 'Blue'],
+                //     labels: ['Red', 'Orange', 'Yellow', 'Green', 'purple'],
                 //     datasets: [
                 //         {
                 //             label: 'Dataset 1',
