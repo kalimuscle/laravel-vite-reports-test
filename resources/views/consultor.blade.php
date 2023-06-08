@@ -69,7 +69,7 @@
 
                             <form>
                                 <div class="min-h-screen">
-                                    <header class="bg-gray-100 text-white py-4">
+                                    <header class="hidden md:block lg:block bg-gray-100 text-white py-4">
                                         <div class="container mx-auto flex items-center justify-start">
                                             <label for="month1" class="mr-2 text-gray-900">Periodo:</label>
                                             <select id="month1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-1/2 p-2.5 mr-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
@@ -155,24 +155,119 @@
                                             </select>
                                         </div>
                                     </header>
-                                <div class="h-16"></div>
+
+                                    <!-- Small Screen-->
+                                    <header class="md:hidden lg:hidden bg-gray-100 text-white py-4">
+                                        <div>
+                                            <div class="flex m-1 text-gray-900">Periodo:</div>
+                                            <div class="flex">
+                                                <select id="month1-small" class="bg-gray-50 w-1/2 m-1 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
+                                                    <option value="01">Janeiro</option>
+                                                    <option value="02">Fevereiro</option>
+                                                    <option value="03">Março</option>
+                                                    <option value="04">Abril</option>
+                                                    <option value="05">Maio</option>
+                                                    <option value="06">Junho</option>
+                                                    <option value="07">Julho</option>
+                                                    <option value="08">Agosto</option>
+                                                    <option value="09">Setembro</option>
+                                                    <option value="10">Outubro</option>
+                                                    <option value="11">Novembro</option>
+                                                    <option value="12">Dezembro</option>
+                                                </select>
+                                                <select id="year1-small" class="bg-gray-50 w-1/2 m-1 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
+                                                    <option value="2000">2000</option>
+                                                    <option value="2001">2001</option>
+                                                    <option value="2002">2002</option>
+                                                    <option value="2003">2003</option>
+                                                    <option value="2004">2004</option>
+                                                    <option value="2005">2005</option>
+                                                    <option value="2006">2006</option>
+                                                    <option value="2007">2007</option>
+                                                    <option value="2008">2008</option>
+                                                    <option value="2009">2009</option>
+                                                    <option value="2010">2010</option>
+                                                    <option value="2011">2011</option>
+                                                    <option value="2012">2012</option>
+                                                    <option value="2013">2013</option>
+                                                    <option value="2014">2014</option>
+                                                    <option value="2015">2015</option>
+                                                    <option value="2016">2016</option>
+                                                    <option value="2017">2017</option>
+                                                    <option value="2018">2018</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                    <option value="2021">2021</option>
+                                                    <option value="2022">2022</option>
+                                                    <option value="2023">2023</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="flex m-1 text-gray-900">A:</div>
+                                            <div class="flex">
+                                                <select id="month2-small" class="bg-gray-50 border w-1/2 m-1 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
+                                                    <option value="01">Janeiro</option>
+                                                    <option value="02">Fevereiro</option>
+                                                    <option value="03">Março</option>
+                                                    <option value="04">Abril</option>
+                                                    <option value="05">Maio</option>
+                                                    <option value="06">Junho</option>
+                                                    <option value="07">Julho</option>
+                                                    <option value="08">Agosto</option>
+                                                    <option value="09">Setembro</option>
+                                                    <option value="10">Outubro</option>
+                                                    <option value="11">Novembro</option>
+                                                    <option value="12">Dezembro</option>
+                                                </select>
+                                                <select id="year2-small" class="bg-gray-50 border w-1/2 m-1 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
+                                                <option value="2000">2000</option>
+                                                    <option value="2001">2001</option>
+                                                    <option value="2002">2002</option>
+                                                    <option value="2003">2003</option>
+                                                    <option value="2004">2004</option>
+                                                    <option value="2005">2005</option>
+                                                    <option value="2006">2006</option>
+                                                    <option value="2007">2007</option>
+                                                    <option value="2008">2008</option>
+                                                    <option value="2009">2009</option>
+                                                    <option value="2010">2010</option>
+                                                    <option value="2011">2011</option>
+                                                    <option value="2012">2012</option>
+                                                    <option value="2013">2013</option>
+                                                    <option value="2014">2014</option>
+                                                    <option value="2015">2015</option>
+                                                    <option value="2016">2016</option>
+                                                    <option value="2017">2017</option>
+                                                    <option value="2018">2018</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                    <option value="2021">2021</option>
+                                                    <option value="2022">2022</option>
+                                                    <option value="2023">2023</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </header>
+
+                                    <!-----end small screen----->
+                                <div class="h-8"></div>
 
                                 <!-- Segunda fila dividida en 3 columnas -->
-                                <div class="flex">
-                                    <div class="w-2/12 bg-gray-100 p-4">
-                                        Consultores
-                                    </div>
-                                    <div class="w-8/12 bg-gray-100 p-4">
-                                        <div class="container mx-auto flex items-center justify-start">
-
-
-                                            <select id="list1" multiple id="countries_multiple" class="bg-gray-50 h-72 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
-                                            @foreach ($consultores as $item)
-                                                <option value="{{$item->co_usuario}}">{{ $item->no_usuario }}</option>
-                                            @endforeach
+                                 <!---- Small Screen---->
+                                <div class="md:hidden lg:hidden">
+                                    <div class="m-1">
+                                        <div class="flex my-1">
+                                            Consultores
+                                        </div>
+                                        <div class="flex">
+                                            <select id="list1-small" multiple id="countries_multiple" class=" h-42 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
+                                                @foreach ($consultores as $item)
+                                                    <option value="{{$item->co_usuario}}">{{ $item->no_usuario }}</option>
+                                                @endforeach
                                             </select>
-
-
+                                        </div>
+                                        <div class="flex">
                                             <button type="button" id="removeButton" class="text-white bg-purple-700 m-2 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">
                                                 <<
                                             </button>
@@ -180,19 +275,58 @@
                                             <button type="button" id="addButton" class="text-white bg-purple-700 m-2 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">
                                                 >>
                                             </button>
-
-
-
-                                            <select id="list2" multiple id="countries_multiple" class="bg-gray-50 h-72 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
+                                        </div>
+                                        <div class="flex">
+                                            <select id="list2-small" multiple id="countries_multiple" class="bg-gray-50 h-42 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
                                             </select>
-
-
+                                        </div>
+                                        <div class="bg-gray-100 py-4">
+                                            <button type="button" id="relatorioButton" class="text-white my-1 w-24 bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Relatório</button>
+                                            <button type="button" id="graphButton" class="text-white m-1 w-24 bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Gráfico</button>
+                                            <button type="button" id="pizzaButton" class="text-white m-1 w-24 bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Pizza</button>
                                         </div>
                                     </div>
-                                    <div class="w-2/12 bg-gray-100 p-4">
-                                        <button type="button" id="relatorioButton" class="text-white m-2 w-24 bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Relatório</button>
-                                        <button type="button" id="graphButton" class="text-white m-2 w-24 bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Gráfico</button>
-                                        <button type="button" id="pizzaButton" class="text-white m-2 w-24 bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Pizza</button>
+                                </div>
+                                <!------end small screen-------->
+
+
+                                <div class="hidden md:block lg:block">
+                                    <div class="flex">
+                                        <div class="w-2/12 bg-gray-100 p-4">
+                                            Consultores
+                                        </div>
+                                        <div class="w-8/12 bg-gray-100 p-4">
+                                            <div class="container mx-auto flex items-center justify-start">
+
+
+                                                <select id="list1" multiple id="countries_multiple" class="bg-gray-50 h-72 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
+                                                @foreach ($consultores as $item)
+                                                    <option value="{{$item->co_usuario}}">{{ $item->no_usuario }}</option>
+                                                @endforeach
+                                                </select>
+
+
+                                                <button type="button" id="removeButton2" class="text-white bg-purple-700 m-2 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">
+                                                    <<
+                                                </button>
+
+                                                <button type="button" id="addButton2" class="text-white bg-purple-700 m-2 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">
+                                                    >>
+                                                </button>
+
+
+
+                                                <select id="list2" multiple id="countries_multiple" class="bg-gray-50 h-72 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500">
+                                                </select>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="w-2/12 bg-gray-100 p-4">
+                                            <button type="button" id="relatorioButton2" class="text-white m-2 w-24 bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Relatório</button>
+                                            <button type="button" id="graphButton2" class="text-white m-2 w-24 bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Gráfico</button>
+                                            <button type="button" id="pizzaButton2" class="text-white m-2 w-24 bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Pizza</button>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -248,7 +382,7 @@
 
                             <li>
                                 <a href="https://twitter.com/VictorMoraton87" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.551c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
                                 </a>
                             </li>
                             <li>
@@ -265,10 +399,7 @@
         </main>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script>
-
-            const list1 = document.getElementById('list1');
-            const list2 = document.getElementById('list2');
-            const addButton = document.getElementById('addButton');
+            let month1Value, month2Value, year1Value, year2Value, list1SelectedOptions, list2Options;
 
             function formattedNumber (numero) {
                 var numero_formateado = numero.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
@@ -397,9 +528,25 @@
                 return useLabels(m1, m2, y1, y2);
             }
 
+            window.addEventListener('resize', function() {
 
 
-            addButton.addEventListener('click', function() {
+            });
+
+
+            function addButtonClick() {
+                let list1, list2;
+
+                if (window.innerWidth < 580) {
+                    list1 = document.getElementById('list1-small');
+                    list2 = document.getElementById('list2-small');
+                } else {
+                    list1 = document.getElementById('list1');
+                    list2 = document.getElementById('list2');
+
+                }
+
+
                 const selectedOptions = Array.from(list1.selectedOptions);
 
                 selectedOptions.forEach((option) => {
@@ -414,24 +561,50 @@
                         list2.add(newOption);
                     }
                 });
-            });
+            };
 
-            removeButton.addEventListener('click', function() {
+            function removeButtonClick() {
+                let list1, list2;
+
+                if (window.innerWidth < 580) {
+                    list1 = document.getElementById('list1-small');
+                    list2 = document.getElementById('list2-small');
+                } else {
+                    list1 = document.getElementById('list1');
+                    list2 = document.getElementById('list2');
+
+                }
+
                 const selectedOptions = Array.from(list2.selectedOptions);
 
                 selectedOptions.forEach((option) => {
                     list2.remove(option.index);
                 });
-            });
+            };
 
-            relatorioButton.addEventListener('click', async function(){
-                const consultores = Array.from(list2.options);
+            async function relatorioButtonClick(){
+
                 let promises = [];
 
-                const month1 = document.getElementById('month1').value;
-                const year1 = document.getElementById('year1').value;
-                const month2 = document.getElementById('month2').value;
-                const year2= document.getElementById('year2').value;
+                let month1, month2, year1, year2, list2;
+
+                if (window.innerWidth < 580) {
+                    month1 = document.getElementById('month1-small').value;
+                    year1 = document.getElementById('year1-small').value;
+                    month2 = document.getElementById('month2-small').value;
+                    year2= document.getElementById('year2-small').value;
+                    list2 = document.getElementById('list2-small');
+
+                } else {
+
+                    month1 = document.getElementById('month1').value;
+                    year1 = document.getElementById('year1').value;
+                    month2 = document.getElementById('month2').value;
+                    year2= document.getElementById('year2').value;
+                    list2 = document.getElementById('list2');
+                }
+
+                const consultores = Array.from(list2.options);
 
                 if(consultores.length  === 0)
                     return;
@@ -557,14 +730,29 @@
                     document.getElementById("tabla").appendChild(table);
                 }
 
-            });
+            };
 
-            graphButton.addEventListener('click', async function() {
+            async function graphButtonClick() {
+
+                let month1, month2, year1, year2, list2;
+
+                if (window.innerWidth < 580) {
+                    month1 = document.getElementById('month1-small').value;
+                    year1 = document.getElementById('year1-small').value;
+                    month2 = document.getElementById('month2-small').value;
+                    year2= document.getElementById('year2-small').value;
+                    list2 = document.getElementById('list2-small');
+
+                } else {
+
+                    month1 = document.getElementById('month1').value;
+                    year1 = document.getElementById('year1').value;
+                    month2 = document.getElementById('month2').value;
+                    year2= document.getElementById('year2').value;
+                    list2 = document.getElementById('list2');
+                }
+
                 const consultores = Array.from(list2.options);
-                const month1 = document.getElementById('month1').value;
-                const year1 = document.getElementById('year1').value;
-                const month2 = document.getElementById('month2').value;
-                const year2= document.getElementById('year2').value;
 
                 if(consultores.length  === 0)
                     return;
@@ -586,8 +774,6 @@
 
                 const res = await axios.get(URL);
 
-                console.log(res);
-
                 document.getElementById("tabla").replaceChildren();
                 var canvas= document.createElement("canvas");
                 canvas.classList.add("border", "w-full");
@@ -607,8 +793,8 @@
 
                     const dataset = {data: []};
                     dataset['label'] = res.data[key].no_usuario;
-                    dataset['backgroundColor'] = `rgba(${R}, ${G}, ${B}, 0.2)`;
-                    dataset['borderColor'] = `rgba(${R}, ${G}, ${B}, 0.2)`;
+                    dataset['backgroundColor'] = `rgba(${R}, ${G}, ${B}, 0.5)`;
+                    dataset['borderColor'] = `rgba(${R}, ${G}, ${B}, 0.5)`;
                     dataset['borderWidth'] = 1;
 
                     const array = useDataset(month1, month2, year1, year2, res.data[key].relatorio);
@@ -618,7 +804,6 @@
                 }
 
                 let labels = useLabels(parseInt(month1), parseInt(month2), year1, year2);
-                console.log(labels);
 
                 const data = {labels, datasets};
 
@@ -632,8 +817,8 @@
                 const line = {
                     label: 'Custo Fixo Medio',
                     data: new Array(labels.length).fill(costoFijoAverage),
-                    borderColor: `rgba(${lineR},${lineG},${lineB}, 0.2)`,
-                    backgroundColor: `rgba(${lineR},${lineG},${lineB}, 0.2)`,
+                    borderColor: `rgba(${lineR},${lineG},${lineB}, 0.5)`,
+                    backgroundColor: `rgba(${lineR},${lineG},${lineB}, 0.5)`,
                     type: 'line',
                     order: 0
                 }
@@ -673,14 +858,29 @@
                         options
                     }
                 );
-            });
+            };
 
-            pizzaButton.addEventListener('click', async function() {
+            async function pizzaButtonClick() {
+
+                let month1, month2, year1, year2, list2;
+
+                if (window.innerWidth < 580) {
+                    month1 = document.getElementById('month1-small').value;
+                    year1 = document.getElementById('year1-small').value;
+                    month2 = document.getElementById('month2-small').value;
+                    year2= document.getElementById('year2-small').value;
+                    list2 = document.getElementById('list2-small');
+
+                } else {
+
+                    month1 = document.getElementById('month1').value;
+                    year1 = document.getElementById('year1').value;
+                    month2 = document.getElementById('month2').value;
+                    year2= document.getElementById('year2').value;
+                    list2 = document.getElementById('list2');
+                }
+
                 const consultores = Array.from(list2.options);
-                const month1 = document.getElementById('month1').value;
-                const year1 = document.getElementById('year1').value;
-                const month2 = document.getElementById('month2').value;
-                const year2= document.getElementById('year2').value;
 
                 if(consultores.length  === 0)
                     return;
@@ -698,11 +898,11 @@
                     k++;
                 });
 
+                //https://test-app-laravel-agence-victor.000webhostapp.com/agence-app/public/
+
                 const URL =  `http://127.0.0.1:8000/relatorio?${arrayConsultor}&m1=${month1}&y1=${year1}&m2=${month2}&y2=${year2}`;
 
                 const res = await axios.get(URL);
-
-                console.log(res);
 
                 document.getElementById("tabla").replaceChildren();
                 var canvas= document.createElement("canvas");
@@ -724,7 +924,7 @@
 
 
                     dataset['label'] = res.data[key].no_usuario;
-                    dataset['backgroundColor'].push(`rgba(${R}, ${G}, ${B}, 0.2)`);
+                    dataset['backgroundColor'].push(`rgba(${R}, ${G}, ${B}, 0.5)`);
 
                     dataset['data'].push(res.data[key].saldo_receita_liquida);
                 }
@@ -732,23 +932,6 @@
                 datasets.push(dataset);
 
                 const data = {labels, datasets};
-
-                // const data = {
-                //     labels: ['Red', 'Orange', 'Yellow', 'Green', 'purple'],
-                //     datasets: [
-                //         {
-                //             label: 'Dataset 1',
-                //             data: [10, 20, 30, 30, 10],
-                //             backgroundColor: [
-                //                 `rgba(100, 112, 33, 0.2)`,
-                //                 `rgba(124, 255, 33, 0.2)`,
-                //                 `rgba(14, 112, 33, 0.2)`,
-                //                 `rgba(255, 255, 33, 0.2)`,
-                //                 `rgba(234, 112, 129, 0.2)`
-                //             ],
-                //         }
-                //     ]
-                //     };
 
                 var options = {
                     plugins: {
@@ -771,7 +954,24 @@
                         options
                     }
                 );
-            });
+            };
+
+
+
+            addButton.addEventListener('click', addButtonClick);
+            addButton2.addEventListener('click', addButtonClick);
+
+            removeButton.addEventListener('click', removeButtonClick);
+            removeButton2.addEventListener('click', removeButtonClick);
+
+            relatorioButton.addEventListener('click', relatorioButtonClick);
+            relatorioButton2.addEventListener('click', relatorioButtonClick);
+
+            graphButton.addEventListener('click', graphButtonClick);
+            graphButton2.addEventListener('click', graphButtonClick);
+
+            pizzaButton.addEventListener('click', pizzaButtonClick);
+            pizzaButton2.addEventListener('click', pizzaButtonClick);
 
         </script>
     </body>
